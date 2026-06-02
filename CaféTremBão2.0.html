@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Café Trem Bão</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --cafe:#4A2C1A;
+    --madeira:#6B4423;
+    --caramelo:#A67C52;
+    --creme:#F8F1E7;
+    --dourado:#D4AF37;
+    --texto:#333;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--creme);
+    font-family:'Poppins',sans-serif;
+    color:var(--texto);
+    padding:30px;
+}
+
+header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.banner-topo{
+    width:100%;
+    margin-bottom:25px;
+}
+
+.banner-topo img{
+    width:100%;
+    max-height:450px;
+    object-fit:cover;
+    border-radius:15px;
+    display:block;
+}
+
+header h1{
+    font-family:'Playfair Display',serif;
+    color:var(--cafe);
+    font-size:4rem;
+}
+
+header p{
+    color:var(--madeira);
+    font-size:1.2rem;
+    margin-top:10px;
+}
+
+.destaque{
+    background:linear-gradient(135deg,var(--cafe),var(--madeira));
+    color:white;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:40px;
+}
+
+.destaque h2{
+    margin-bottom:15px;
+}
+
+.destaque ul{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:10px;
+}
+
+.menu{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
+    gap:25px;
+}
+
+.categoria{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    border-left:8px solid var(--madeira);
+}
+
+.categoria h2{
+    color:var(--cafe);
+    margin-bottom:20px;
+    font-size:1.8rem;
+    font-family:'Playfair Display',serif;
+}
+
+.item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 0;
+    border-bottom:1px dashed #ddd;
+}
+
+.item:last-child{
+    border:none;
+}
+
+.nome{
+    font-weight:500;
+}
+
+.preco{
+    color:var(--cafe);
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    margin-top:50px;
+    color:var(--madeira);
+}
+
+@media(max-width:768px){
+
+.menu{
+    grid-template-columns:1fr;
+}
+
+header h1{
+    font-size:2.5rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="banner-topo">
+    <img src="C:\Users\linde\Downloads\banner2.jpg" 
+</div>
+
+<h1>Café Trem Bão</h1>
+<p>Sabores autênticos de Minas Gerais</p>
+
+</header>
+
+<section class="destaque">
+    <h2>⭐ Especialidades da Casa</h2>
+    <ul>
+        <li>Pequeleijo</li>
+        <li>Sabores de Minas</li>
+        <li>Café Mineiro Especial</li>
+        <li>Pão de Queijo Recheado</li>
+        <li>Queijo Canastra</li>
+        <li>Bolo Caçarola Mineira</li>
+    </ul>
+</section>
+
+<div class="menu">
+
+<section class="categoria">
+<h2>🥤 Bebidas</h2>
+
+<div class="item"><span class="nome">Água</span><span class="preco">R$ 5,00</span></div>
+<div class="item"><span class="nome">Água com gás</span><span class="preco">R$ 6,00</span></div>
+
+<div class="item"><span class="nome">Coca-Cola 2L</span><span class="preco">R$ 18,00</span></div>
+<div class="item"><span class="nome">Coca-Cola 600ML</span><span class="preco">R$ 10,00</span></div>
+<div class="item"><span class="nome">Coca-Cola 350ML</span><span class="preco">R$ 8,00</span></div>
+
+<div class="item"><span class="nome">Fanta Laranja 2L</span><span class="preco">R$ 17,00</span></div>
+<div class="item"><span class="nome">Fanta Laranja 600ML</span><span class="preco">R$ 9,00</span></div>
+<div class="item"><span class="nome">Fanta Laranja 350ML</span><span class="preco">R$ 7,00</span></div>
+
+<div class="item"><span class="nome">Fanta Uva 2L</span><span class="preco">R$ 17,00</span></div>
+<div class="item"><span class="nome">Fanta Uva 600ML</span><span class="preco">R$ 9,00</span></div>
+<div class="item"><span class="nome">Fanta Uva 350ML</span><span class="preco">R$ 7,00</span></div>
+
+<div class="item"><span class="nome">Guaraná 2L</span><span class="preco">R$ 17,00</span></div>
+<div class="item"><span class="nome">Guaraná 600ML</span><span class="preco">R$ 9,00</span></div>
+<div class="item"><span class="nome">Guaraná 350ML</span><span class="preco">R$ 7,00</span></div>
+
+<div class="item"><span class="nome">Sprite 2L</span><span class="preco">R$ 16,00</span></div>
+<div class="item"><span class="nome">Sprite 600ML</span><span class="preco">R$ 9,00</span></div>
+<div class="item"><span class="nome">Sprite 350ML</span><span class="preco">R$ 7,00</span></div>
+
+</section>
+
+<section class="categoria">
+<h2>🍊 Sucos Naturais</h2>
+
+<div class="item"><span class="nome">Suco de Acerola</span><span class="preco">R$ 14,00</span></div>
+<div class="item"><span class="nome">Suco de Cambuci</span><span class="preco">R$ 16,00</span></div>
+<div class="item"><span class="nome">Suco de Goiaba</span><span class="preco">R$ 14,00</span></div>
+<div class="item"><span class="nome">Suco de Laranja</span><span class="preco">R$ 13,00</span></div>
+<div class="item"><span class="nome">Suco de Limão</span><span class="preco">R$ 13,00</span></div>
+<div class="item"><span class="nome">Suco de Maracujá</span><span class="preco">R$ 16,00</span></div>
+<div class="item"><span class="nome">Suco de Melancia</span><span class="preco">R$ 13,00</span></div>
+
+</section>
+
+<section class="categoria">
+<h2>☕ Bebidas Quentes</h2>
+
+<div class="item"><span class="nome">Café Pequeno</span><span class="preco">R$ 6,50</span></div>
+<div class="item"><span class="nome">Café Médio</span><span class="preco">R$ 10,00</span></div>
+<div class="item"><span class="nome">Café Grande</span><span class="preco">R$ 12,00</span></div>
+<div class="item"><span class="nome">Café com Leite</span><span class="preco">R$ 11,00</span></div>
+<div class="item"><span class="nome">Café Gourmet</span><span class="preco">R$ 15,00</span></div>
+<div class="item"><span class="nome">Café Mineiro Especial</span><span class="preco">R$ 18,00</span></div>
+<div class="item"><span class="nome">Cappuccino</span><span class="preco">R$ 17,00</span></div>
+<div class="item"><span class="nome">Chocolate Quente</span><span class="preco">R$ 18,00</span></div>
+<div class="item"><span class="nome">Chocolate com Leite</span><span class="preco">R$ 12,00</span></div>
+
+</section>
+
+<section class="categoria">
+<h2>🍬 Doces Mineiros</h2>
+
+<div class="item"><span class="nome">Ambrosia</span><span class="preco">R$ 13,00</span></div>
+<div class="item"><span class="nome">Doce de Abóbora</span><span class="preco">R$ 10,00</span></div>
+<div class="item"><span class="nome">Bananinha</span><span class="preco">R$ 8,00</span></div>
+<div class="item"><span class="nome">Canjica</span><span class="preco">R$ 12,00</span></div>
+<div class="item"><span class="nome">Cocada</span><span class="preco">R$ 9,00</span></div>
+<div class="item"><span class="nome">Doce de Leite Artesanal</span><span class="preco">R$ 28,00</span></div>
+<div class="item"><span class="nome">Goiabada</span><span class="preco">R$ 10,00</span></div>
+<div class="item"><span class="nome">Rocambole</span><span class="preco">R$ 12,00</span></div>
+<div class="item"><span class="nome">Romeu e Julieta</span><span class="preco">R$ 15,00</span></div>
+
+</section>
+
+<section class="categoria">
+<h2>🍰 Bolos</h2>
+
+<div class="item"><span class="nome">Bolo Cabo de Machado</span><span class="preco">R$ 15,00</span></div>
+<div class="item"><span class="nome">Bolo de Cenoura com Chocolate</span><span class="preco">R$ 14,00</span></div>
+<div class="item"><span class="nome">Bolo de Fubá</span><span class="preco">R$ 12,00</span></div>
+<div class="item"><span class="nome">Bolo de Fubá Cremoso</span><span class="preco">R$ 14,00</span></div>
+<div class="item"><span class="nome">Bolo de Fubá Simples</span><span class="preco">R$ 11,00</span></div>
+<div class="item"><span class="nome">Bolo de Milho</span><span class="preco">R$ 15,00</span></div>
+<div class="item"><span class="nome">Bolo de Queijo</span><span class="preco">R$ 17,00</span></div>
+<div class="item"><span class="nome">Bolo Formigueiro</span><span class="preco">R$ 14,00</span></div>
+<div class="item"><span class="nome">Bolo Caçarola Mineira</span><span class="preco">R$ 18,00</span></div>
+
+</section>
+
+<section class="categoria">
+<h2>🥧 Tortas Salgadas</h2>
+
+<div class="item"><span class="nome">Torta Brandade de Bacalhau</span><span class="preco">R$ 18,00</span></div>
+<div class="item"><span class="nome">Torta Caipira</span><span class="preco">R$ 15,00</span></div>
+<div class="item"><span class="nome">Torta Cremosa de Carne Moída</span><span class="preco">R$ 15,00</span></div>
+<div class="item"><span class="nome">Torta de Couve com Bacon</span><span class="preco">R$ 16,00</span></div>
+<div class="item"><span class="nome">Torta de Frango com Catupiry</span><span class="preco">R$ 17,00</span></div>
+<div class="item"><span class="nome">Torta de Palmito e Alho-Poró</span><span class="preco">R$ 17,00</span></div>
+
+</section>
+
+<section class="categoria">
+<h2>🥖 Pães e Salgados</h2>
+
+<div class="item"><span class="nome">Broa de Milho</span><span class="preco">R$ 5,00</span></div>
+<div class="item"><span class="nome">Pão Caseiro com Queijo Minas</span><span class="preco">R$ 14,00</span></div>
+<div class="item"><span class="nome">Pão de Queijo</span><span class="preco">R$ 6,50</span></div>
+<div class="item"><span class="nome">Pão de Queijo Recheado</span><span class="preco">R$ 18,00</span></div>
+
+</section>
+
+<section class="categoria">
+<h2>🥪 Lanches</h2>
+
+<div class="item"><span class="nome">Sanduíche Mineiro</span><span class="preco">R$ 20,00</span></div>
+<div class="item"><span class="nome">Tapioca Recheada</span><span class="preco">R$ 18,00</span></div>
+
+</section>
+
+<section class="categoria">
+<h2>🧀 Queijos Artesanais</h2>
+
+<div class="item"><span class="nome">Queijo Cabacinha</span><span class="preco">R$ 35,00</span></div>
+<div class="item"><span class="nome">Queijo Canastra</span><span class="preco">R$ 75,00</span></div>
+<div class="item"><span class="nome">Queijo Cerrado</span><span class="preco">R$ 60,00</span></div>
+<div class="item"><span class="nome">Queijo de Alagoa</span><span class="preco">R$ 95,00</span></div>
+<div class="item"><span class="nome">Queijo do Serro</span><span class="preco">R$ 60,00</span></div>
+<div class="item"><span class="nome">Queijo Minas</span><span class="preco">R$ 45,00</span></div>
+<div class="item"><span class="nome">Queijo Minas Frescal</span><span class="preco">R$ 38,00</span></div>
+<div class="item"><span class="nome">Requeijão Moreno</span><span class="preco">R$ 24,00</span></div>
+
+</section>
+
+<section class="categoria">
+<h2>🍲 Pratos Típicos</h2>
+
+<div class="item"><span class="nome">Feijoada</span><span class="preco">R$ 40,00</span></div>
+<div class="item"><span class="nome">Canjiquinha</span><span class="preco">R$ 40,00</span></div>
+<div class="item"><span class="nome">Frango com Quiabo</span><span class="preco">R$ 40,00</span></div>
+<div class="item"><span class="nome">Vaca Atolada</span><span class="preco">R$ 40,00</span></div>
+
+</section>
+
+<section class="categoria">
+<h2>⭐ Pratos Especiais</h2>
+
+<div class="item">
+    <span class="nome">Pequeleijo</span>
+    <span class="preco">R$ 12,00</span>
+</div>
+
+<div class="item">
+    <span class="nome">Sabores de Minas</span>
+    <span class="preco">R$ 59,90</span>
+</div>
+
+</section>
+
+</div>
+
+<footer>
+    Café Trem Bão • Tradição, sabor e hospitalidade mineira.
+</footer>
+
+</body>
+</html>
